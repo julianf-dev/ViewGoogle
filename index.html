@@ -1,75 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-menu">
-                <ul>
-                    <li>
-                        <a href="/">Gmail</a>
-                    </li>
-                    <li >
-                        <a href="/">Imágenes</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-logos">
-                <div class="item3">
-                    <figure>
-                        <img src="./img/menu-de-puntos.png" alt="menu">
-                    </figure>
-                </div>
-                <div  class="item4">
-                    <figure>
-                        <img src="./img/Avatar.png" alt="avatar">
-                    </figure>
-                </div>
-            </div>
+    <header>
+        <nav>
+            <ul class="nav-right-section">
+                <li><a href="/">Gmail</a></li>
+                <li><a href="/">Images</a></li>
+                <li class="menu-icon"><a href="/" ></a></li>
+                <li>
+                    <button>Sign in</button>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
-            <div class="main-logo">
-                <figure>
-                    <img src="./img/logo-google.png" alt="logo-google">
-                </figure>
+        <section class="main-logo">
+            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png"
+            alt="logo-google">
+        </section>
+        <section class="main-input">
+            <div class="main-input-container">
+                <span class="search-icon">
+                </span>
+                <input type="text" name="" id="">
+                <a class="micro-icon"href="/"></a>
             </div>
-            <div class="main-search">
-                <div>
-                    <input type="text">
-                </div>
-                <div>
-                    <button>Buscar con Google</button>
-                    <button>I'm feelling lucky</button>
-                </div>
-            </div>
+        </section>
+        <section class="main-buttons">
+            <div><button>Google Search</button></div>
+            <div><button>I'm Feeling Lucky</button></div>
+        </section>
     </main>
     <footer>
-        <div class="left-footer">
-            <ul>
-                <li><a href="/">Sobre Google</a></li>
-                <li><a href="/">Publicidad</a></li>
-                <li><a href="/">Negocios</a></li>
-                <li><a href="/">Acerca de</a></li>
-                <li><a href="/">Cómo funciona la busqueda</a></li>
-            </ul>
-        </div>
-        <div class="right-footer">
-            <ul>
-                <li><a href="/">Privacidad</a></li>
-                <li><a href="/">Condiciones</a></li>
-                <li><a href="/">Preferencias</a></li>
-            </ul>
-        </div>
+        <ul class="footer-left">
+            <li><a href="/">Advertising</a></li>
+            <li><a href="/">Business</a></li>
+            <li><a href="/">How Search works</a></li>
+        </ul>
+        
+        <ul class="footer-right">
+            <li><a href="/">Privacy</a></li>
+            <li><a href="/">Terms</a></li>
+            <li><a href="/">Settings</a></li>
+        </ul>
     </footer>
 </body>
-
 </html>

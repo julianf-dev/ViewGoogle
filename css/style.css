@@ -1,171 +1,184 @@
-:root{
-    --my-font:  Arial, Helvetica, sans-serif;
-    --my-font-two: 'Quicksand', sans-serif;
-    --sm: 1.2rem;
-    --md: 1.6rem;
-    --lg: 1.8rem;
-    --black: rgba(0,0,0,0.87);
-}
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html {
+html{
     font-size: 62.5%;
 }
-.navbar {
-    min-width: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    font-family: var(--my-font) ;
-    font-size: var(--sm);
-    padding: 6px;
-    height: 8vh
+body{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.nav-menu ul {
-    list-style: none;
-    display: flex;
-    color: var(--black);
-}
-.nav-menu li {
-    padding-right: 1.5rem;
-
-}
-.nav-menu ul li a {
-    color: var(--black);
+a {
     text-decoration: none;
     cursor: pointer;
 }
-.nav-logos{
-    display: flex;
-    align-items: center;
-    padding-right: 1rem;
-    padding-left: 20px;
+a:hover {
+    text-decoration: underline;
 }
-.item3, .item4 {
+header {
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 18px;
+}
+header nav .nav-right-section{
+    height: auto;
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    margin-top: 10px;
 }
-.item3 img{
-    cursor: pointer;
-    height: 3.2rem;
-    width: 3.2rem;
-    margin-right: 20px;
-    padding: 8px;
+nav .nav-right-section a {
+    margin-right: 14px;
+    color: #000000;
 }
-.item4 img{
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+nav .nav-right-section .menu-icon:hover{
+    outline: none;
     border-radius: 50%;
-    overflow: hidden;
-    height: 4.8rem;
-    width: 4.8rem;
-    padding: 8px;
+    background-color: rgba(60,64,67,0.08);
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 85vh;
-}
-.main-logo{
-    width: 100vw;
-    height: 44%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 8px;
-}
-.main-logo figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 16vh;
-}
-
-.main-logo img{
-    width: 220px;
-}
-.main-search{
-    height: 56%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main-search input{
-    width: 32vw;
-    height: 32px;
-    border: 1px solid #dcdcdc;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.main-search button{
-    font-family: var(--my-font);
-    font-size: var(--sm);
-    color: #9e9b9b;
-    width: 8vw;
-    height: 28px;
+nav .nav-right-section button{
+    background-color: #1a73e8;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.25px;
+    color: white;
     border: none;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    padding: 9px 23px;
     border-radius: 4px;
-    margin-left: 20px;
     cursor: pointer;
 }
-
+nav .nav-right-section button:hover{
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+main  {
+    text-align: center;
+    margin-top: 6px;
+}
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+main .main-logo img{
+    width: 270px;
+}
+main .main-input{
+    width: 580px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+main .main-input-container{
+    width: 560px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 14px;
+}
+main .main-input input {
+    width: 500px;
+    height: 42px;
+    border: none;
+    /* Este estilo lo qe hace es no resaltar el input*/
+    outline: none;
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon {
+    background-image: url('https://icon-library.com/images/search-for-icon/search-for-icon-14.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+}
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons  button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px #dadce0;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
 footer {
-    font-family: var(--my-font);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 0;
+    width: 100%;
+    height: 48px;
+    /*Que se quede siempre abajo de la página*/
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+    font-size: 1.4rem;
     background-color: #f2f2f2;
-    height: 7vh;
-    font-size: var(--sm);
-    border-top: 0.1rem solid #bfbebe;
-    padding:  0 20px;
-}
-.left-footer {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 40%;
 }
-.right-footer {
+footer ul {
+    margin: 10px;
+    list-style-type: none;
+    /*los ul tienen un padding left por defecto*/
+    padding-left: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 40%;
-    justify-content: flex-end;
 }
-.right-footer ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+footer .footer-left{
+    justify-self: left;
 }
-.left-footer ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+footer .footer-right{
+    justify-self: right;
 }
-.left-footer ul li{
-    padding: 10px 10px;
-}
-.right-footer ul li{
-    padding: 10px 10px;
-}
-.left-footer ul li a{
-    text-decoration: none;
-    color: grey;
-}
-.right-footer ul li a{
-    text-decoration: none;
-    color: grey;
+footer ul li a {
+    margin: 10px;
+    color: #70757a;
 }
