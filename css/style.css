@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --my-font:  Arial, Helvetica, sans-serif;
+    --my-font-two: 'Quicksand', sans-serif;
+    --sm: 1.3rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+    --black: #000000;
+}
+html {
+    font-size: 62.5%;
+}
+
+.navbar {
+    min-width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: var(--my-font) ;
+    font-size: var(--sm);
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 10px 10px;
+    color: var(--black);
+}
+.navbar li {
+    padding-right: 1.5rem;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+}
