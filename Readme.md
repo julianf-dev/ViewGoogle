@@ -1,4 +1,4 @@
-# Clong Google
+# Clon de Google
 
 Es un proyecto de solo la vista en HTML y CSS de Google
 
