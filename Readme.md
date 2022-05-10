@@ -4,7 +4,7 @@ Es un proyecto de solo la vista en HTML y CSS de Google
 
 ## Vista del proyecto 🚀
 
-Mira **[View-Google" (https://julian1david.github.io/ViewGoogle/)** para conocer como funciona el proyecto.
+Mira **[View-Google](https://julian1david.github.io/ViewGoogle/)** para conocer como funciona el proyecto.
 
 
 ### Instalación 🔧
